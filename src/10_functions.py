@@ -10,3 +10,18 @@ num = int(num)
 
 # YOUR CODE HERE
 
+if num % 2 == 0:
+  print('Even!')
+else:
+  print('Odd')
+
+
+##################################
+
+numlst = [7, 13, 68, 23, 9, 186]
+
+def centered_average(lst):
+    lst.sort()
+    return sum(lst[1:-1]) / (len(lst) - 2)
+
+print(centered_average(numlst))
